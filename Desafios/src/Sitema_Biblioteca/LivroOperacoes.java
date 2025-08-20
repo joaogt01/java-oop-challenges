@@ -4,4 +4,5 @@ public interface LivroOperacoes {
     void cadastrarLivro();
     void emprestarLivro();
     void consultarLivros();
+    void removerLivro();
 }

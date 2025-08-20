@@ -46,8 +46,20 @@ public class biblioteca implements LivroOperacoes{
         }
     }
 
+    @Override
+    public void removerLivro(){
+        int cont = 1;
+        for (Livro l : livros){
+            System.out.println(cont + " - " + l);
+            cont++;}
+        System.out.println("Escolha o livro que deseja remover");
+        int remover = entrada.nextInt();
+        livros.remove(remover - 1);
+        System.out.println("Livro removido com sucesso!");
+    }
+
     public int menu(){
-        System.out.println("0 - sair \n1 - cadastrar livro \n2 - consultar livros\n3 - emprestar livro");
+        System.out.println("0 - sair \n1 - cadastrar livro \n2 - consultar livros\n3 - emprestar livro\n4 - remover livro");
         System.out.println("----------------------------------");
         int opcaoMenu = entrada.nextInt();
         entrada.nextLine();

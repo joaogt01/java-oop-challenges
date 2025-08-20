@@ -15,6 +15,8 @@ public class Main {
                 biblioteca.consultarLivros();
             } else if (opcao == 3) {
                 biblioteca.emprestarLivro();
+            } else if (opcao == 4) {
+                biblioteca.removerLivro();
             }
         }
     }
