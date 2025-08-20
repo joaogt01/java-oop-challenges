@@ -30,6 +30,7 @@ public class biblioteca implements LivroOperacoes{
     public void emprestarLivro() {
 
     }
+
     public int menu(){
         System.out.println("0 - sair \n1 - cadastrar livro \n2 - consultar livros\n3 - emprestar livro");
         int opcaoMenu = entrada.nextInt();
