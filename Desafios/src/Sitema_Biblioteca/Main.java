@@ -13,6 +13,8 @@ public class Main {
                 biblioteca.cadastrarLivro();
             } else if (opcao == 2) {
                 biblioteca.consultarLivros();
+            } else if (opcao == 3) {
+                biblioteca.emprestarLivro();
             }
         }
     }
